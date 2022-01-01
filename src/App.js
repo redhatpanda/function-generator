@@ -28,8 +28,10 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://github.com/redhatpanda">
+        Swapnanil Ray (B-147)
+        Surya Sekhar Datta (B-150)
+        Raktim Chakraborty (B-116)
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -228,6 +230,7 @@ const [open,setOpen] = React.useState(false);
           </Box>
         </Box>
       </Container>
+      <Copyright />
     </ThemeProvider>
   );
 }
