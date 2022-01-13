@@ -50,7 +50,7 @@ const [open,setOpen] = React.useState(false);
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
-    axios.post('http://localhost:8000/api/handlegendata', data).then((response) => {
+    axios.post('https://function-generator-backend.herokuapp.com/api/handlegendata', data).then((response) => {
       console.log(response);
     });
     setOpen(true);
@@ -66,7 +66,7 @@ const [open,setOpen] = React.useState(false);
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
-    axios.post('http://localhost:8000/api/handlegenfourier', data).then((response) => {
+    axios.post('https://function-generator-backend.herokuapp.com/api/handlegenfourier', data).then((response) => {
       console.log(response);
     });
     setOpen(true);
